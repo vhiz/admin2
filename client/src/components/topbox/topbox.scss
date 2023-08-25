@@ -1,0 +1,49 @@
+.topbox {
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .user {
+        display: flex;
+        gap: 20px; 
+
+        .userText {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          font-size: 12px;
+
+          span{
+            &:first-child{
+              font-weight: 500;
+            }
+
+            &:last-child{
+              font-size: 10px;
+            }
+          }
+        }
+
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      span{
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+}
